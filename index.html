@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>CV – Jorge Enrique Murcia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <style>
+    :root {
+      --gold: #BFA46F;
+      --charcoal: #111;
+      --white: #fff;
+      --gray: #f5f5f5;
+      --font: 'Helvetica Neue', Arial, sans-serif;
+      --primary-color: #007BFF;
+      --secondary-color: #28A745;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--gray);
+      color: var(--charcoal);
+      line-height: 1.55;
+    }
+
+    .cv {
+      max-width: 920px;
+      margin: 40px auto;
+      background: var(--white);
+      box-shadow: 0 20px 70px rgba(0, 0, 0, 0.15);
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      border-radius: 10px;
+    }
+
+    .sidebar {
+      background: var(--charcoal);
+      color: var(--white);
+      padding: 50px 35px;
+      border-radius: 10px 0 0 10px;
+    }
+
+    .sidebar h1 {
+      font-size: 24px;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .sidebar .subtitle {
+      font-size: 14px;
+      color: var(--gold);
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .sidebar h2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 25px 0 10px;
+      color: var(--gold);
+      border-bottom: 1px solid var(--gold);
+      padding-bottom: 5px;
+    }
+
+    .sidebar p, .sidebar a {
+      font-size: 13px;
+      color: #ddd;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .sidebar a:hover {
+      color: var(--primary-color);
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar li {
+      margin-bottom: 8px;
+    }
+
+    .skills li {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+    }
+
+    .bar {
+      width: 100%;
+      background: #333;
+      height: 4px;
+      margin-top: 4px;
+      border-radius: 2px;
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      background: var(--gold);
+      border-radius: 2px;
+    }
+
+    .main {
+      padding: 50px 45px;
+      border-radius: 0 10px 10px 0;
+    }
+
+    .main h2 {
+      font-size: 17px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 18px;
+      border-bottom: 1px solid var(--gold);
+      padding-bottom: 8px;
+    }
+
+    .main .job {
+      margin-bottom: 28px;
+      padding: 10px;
+      border-left: 4px solid var(--gray);
+      transition: 0.3s;
+    }
+
+    .main .job:hover {
+      background: var(--gray);
+      border-left-color: var(--gold);
+    }
+
+    .main .jobtitle {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--primary-color);
+    }
+
+    .main .company {
+      font-size: 14px;
+      color: var(--gold);
+    }
+
+    .main .date {
+      font-size: 12px;
+      color: #666;
+    }
+
+    .main ul {
+      margin-top: 8px;
+      padding-left: 18px;
+      font-size: 14px;
+    }
+
+    .main ul li {
+      margin-bottom: 4px;
+    }
+
+    .pdf-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: var(--gold);
+      color: var(--charcoal);
+      border: none;
+      padding: 12px 22px;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      border-radius: 3px;
+      transition: 0.3s;
+    }
+
+    .pdf-btn:hover {
+      opacity: 0.85;
+    }
+
+    @media print {
+      .pdf-btn {
+        display: none;
+      }
+
+      body {
+        background: #fff;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .cv {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        border-radius: 10px 10px 0 0;
+      }
+
+      .main {
+        border-radius: 0 0 10px 10px;
+      }
+    }
+
+    .document-links a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #f1f1f1;
+      padding: 10px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: var(--primary-color);
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+
+    .document-links a:hover {
+      background: #e2e2e2;
+    }
+  </style>
+</head>
+<body>
+
+<div class="cv">
+  <aside class="sidebar">
+    <h1>JORGE ENRIQUE MURCIA GOMÉZ</h1>
+    <div style="text-align:center; margin-bottom: 20px;">
+      <img src="foto.jpg" alt="Foto de Jorge Enrique Murcia" style="width:120px; height:120px; border-radius:50%; border: 3px solid var(--gold); object-fit: cover;">
+    </div>
+   
+
+    <h2>Datos Personales</h2>
+    <p><strong>Cédula:</strong> 1.007.178.974</p>
+    <p><strong>Fecha de nacimiento:</strong> 14 de julio de 2003</p>
+    <p><strong>Estado civil:</strong> Soltero</p>
+
+    <h2>Contacto</h2>
+    <p><span class="material-icons">phone</span> 3106259931</p>
+    <p><span class="material-icons">email</span> tu.email@ejemplo.com</p>
+    <p><span class="material-icons">location_on</span> Rivera, Huila – Colombia</p>
+    <p><span class="material-icons">home</span> Barrio Luis Carlos Galán 1ra etapa</p>
+
+    <h2>Idiomas</h2>
+    <ul>
+      <li>Español <i>Nativo</i></li>
+    </ul>
+
+    <h2>Habilidades</h2>
+    <ul class="skills">
+      <li>Responsabilidad <div class="bar"><span style="width:95%"></span></div></li>
+      <li>Compromiso <div class="bar"><span style="width:90%"></span></div></li>
+      <li>Aprendizaje continuo <div class="bar"><span style="width:88%"></span></div></li>
+      <li>Resolución de problemas <div class="bar"><span style="width:85%"></span></div></li>
+      <li>Programación <div class="bar"><span style="width:75%"></span></div></li>
+    </ul>
+  </aside>
+
+  <main class="main">
+    <h2>Perfil Profesional</h2>
+    <p>
+      Soy una persona responsable, comprometida y con gran interés por el aprendizaje continuo.
+      Me motiva adquirir nuevos conocimientos, especialmente en el área de programación, donde disfruto enfrentar desafíos,
+      resolver problemas y mejorar mis habilidades técnicas. Me esfuerzo por mantenerme actualizado y aportar soluciones
+      efectivas mediante el uso de la tecnología.
+    </p>
+    <br>
+    <h2>Formación Académica</h2>
+    <div class="job">
+      <div class="jobtitle">Técnico en Sistemas</div>
+      <div class="company">SENA – Servicio Nacional de Aprendizaje</div>
+      <div class="date">Finalizado</div>
+    </div>
+
+    <div class="job">
+      <div class="jobtitle">Cursos complementarios (SENA)</div>
+      <div class="company">Modalidad virtual/presencial</div>
+      <div class="date">Certificados</div>
+      <ul>
+        <li>Ejercicio de los Derechos Fundamentales en el Trabajo</li>
+        <li>Básico en Mantenimiento de Computadores</li>
+        <li>Aplicación de Herramientas Metodológicas en la Investigación</li>
+        <li>Fundamentos del Modelado de Software con UML</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="jobtitle">Educación Secundaria</div>
+      <div class="company">I.E. Riverita – Rivera, Huila</div>
+      <div class="date">Hasta grado 11</div>
+    </div>
+
+    <div class="job">
+      <div class="jobtitle">Educación Primaria</div>
+      <div class="company">I.E. Riverita – Rivera, Huila</div>
+      <div class="date">Hasta 5º grado</div>
+    </div>
+
+    <h2>Experiencia Laboral</h2>
+    <div class="job">
+      <div class="jobtitle">Pasante – Secretaría de Comisaría</div>
+      <div class="company">Comisaría de Familia e Inspección de Policía</div>
+      <div class="date">Fecha no especificada</div>
+      <ul>
+        <li>Apoyo administrativo y logístico como parte de las pasantías estudiantiles.</li>
+      </ul>
+    </div>
+
+    <h2>Referencias</h2>
+    <div class="job">
+      <div class="jobtitle">Jesús David Quiza Roa</div>
+      <div class="company">Amigo</div>
+      <div class="date">Cel: 3227220215</div>
+    </div>
+
+    <div class="job">
+      <div class="jobtitle">Blanca Cecilia Gómez Losada</div>
+      <div class="company">Madre – Ama de casa</div>
+      <div class="date">Cel: 3138156014</div>
+    </div>
+
+    <h2>Documentos Adjuntos</h2>
+    <div class="document-links">
+      <a href="https://drive.google.com/file/d/1uGDaPivvZAm49nyCTyhXw6GRxYWozeeF/view" target="_blank"><span class="material-icons">badge</span>Documento de identidad</a>
+      <a href="https://drive.google.com/file/d/1dHWer11pTLaGQKI8xAgSx3cATw5lUZxm/view" target="_blank"><span class="material-icons">description</span>Certificado de antecedentes judiciales</a>
+      <a href="https://drive.google.com/file/d/1nUkKWLy4e7cAfSxJgkkcEYH8nSEBQ-Dy/view" target="_blank"><span class="material-icons">gavel</span>Certificado de Procuraduría</a>
+      <a href="https://drive.google.com/file/d/1jqwQUgHphwbGVM8kqTWgqlUeGoPn0Tr5/view" target="_blank"><span class="material-icons">account_balance</span>Certificado de Contraloría</a>
+      <a href="https://drive.google.com/file/d/1D99Z6GF0FSNV_wyMYpfFTouuQnJY6ons/view" target="_blank"><span class="material-icons">school</span>Soporte estudios (Acta y Diploma de grado)</a>
+      <a href="https://drive.google.com/file/d/1fIJ90lDJ0i7mcbge6tAFnZy1ou8GuRjW/view" target="_blank"><span class="material-icons">school</span>Estudios y cursos SENA</a>
+    </div>
+  </main>
+</div>
+
+<button class="pdf-btn" onclick="window.print()">Descargar PDF</button>
+
+</body>
+</html>
